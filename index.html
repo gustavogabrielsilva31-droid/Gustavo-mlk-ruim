@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroDireto | Guia Inteligente de Defensivos Agrícolas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-bar" role="complementary" aria-label="Ferramentas de Acessibilidade">
+        <div class="container accessibility-container">
+            <span class="accessibility-text">Acessibilidade:</span>
+            <button id="btn-font-decrease" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button id="btn-font-increase" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button id="btn-contrast" aria-label="Alternar alto contraste"><i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste</button>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo" aria-label="AgroDireto Home">
+                <i class="fa-solid fa-leaf icon"></i> Agro<span>Direto</span>
+            </a>
+            <nav class="main-nav" aria-label="Navegação Principal">
+                <a href="#beneficios">Benefícios</a>
+                <a href="#comparativo">Comparativos</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#faq">Dúvidas</a>
+            </nav>
+            <a href="#cta-form" class="btn btn-primary">Falar com Especialista</a>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Economia Inteligente e Produtividade</span>
+                <h1>Proteja sua lavoura com o melhor custo-benefício do mercado</h1>
+                <p>Instruções precisas e comparativos reais de defensivos agrícolas. Encontre a máxima eficiência para o pequeno produtor e a qualidade em escala exigida pelo grande produtor.</p>
+                <div class="hero-actions">
+                    <a href="#cta-form" class="btn btn-primary btn-large">Otimizar Meus Custos</a>
+                    <a href="#comparativo" class="btn btn-secondary btn-large">Ver Comparativos</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-card">
+                    <div class="card-icon"><i class="fa-solid fa-shield-halved icon"></i></div>
+                    <h3>Decisão Blindada</h3>
+                    <p>Bulário simplificado, dosagens exatas e substitutos genéricos de alta performance.</p>
+                </div>
+                <div class="hero-card">
+                    <div class="card-icon"><i class="fa-solid fa-calculator icon"></i></div>
+                    <h3>Cálculo de ROI</h3>
+                    <p>Saiba exatamente o custo por hectare antes de fechar a compra com o distribuidor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soluções Sob Medida para o seu Tamanho</h2>
+                <p>Unimos a necessidade de economia do agricultor familiar à exigência técnica e escala dos grandes grupos agrícolas.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-box">
+                    <div class="benefit-icon"><i class="fa-solid fa-tractor icon"></i></div>
+                    <h3>Para o Pequeno Produtor</h3>
+                    <p>Descubra marcas comerciais alternativas com o mesmo princípio ativo (equivalentes). Economize até 40% no manejo de pragas sem perder um único saco de produtividade por hectare.</p>
+                </div>
+                <div class="benefit-box">
+                    <div class="benefit-icon"><i class="fa-solid fa-chart-line icon"></i></div>
+                    <h3>Para o Grande Produtor</h3>
+                    <p>Análise de estabilidade de formulação, compatibilidade de mistura em tanque e negociação por volume. Garanta o menor custo por ativo puro com suporte de engenheiros agrônomos sêniores.</p>
+                </div>
+                <div class="benefit-box">
+                    <div class="benefit-icon"><i class="fa-solid fa-file-shield icon"></i></div>
+                    <h3>Instruções de Aplicação</h3>
+                    <p>Vídeos e infográficos diretos sobre regulagem de bicos de pulverização, condições climáticas ideais e período de carência para evitar perdas por deriva ou volatilização.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel-section" id="comparativo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Análises e Equivalências de Mercado</h2>
+                <p>Nossos especialistas avaliam constantemente os defensivos mais utilizados. Veja as últimas análises de viabilidade econômica.</p>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="carousel-container" id="carousel-target" role="region" aria-live="polite">
+                    </div>
+                <div class="carousel-controls">
+                    <button id="carousel-prev" class="btn-nav" aria-label="Slide anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="carousel-next" class="btn-nav" aria-label="Próximo slide"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quem Aplica a Nossa Metodologia Aprova</h2>
+                <p>Resultados reais de produtores que transformaram o custo do manejo fitossanitário em lucro líquido.</p>
+            </div>
+            <div class="testimonials-grid">
+                <blockquote class="testimonial-item">
+                    <p>"Sempre achei que só a marca mais cara funcionava. Com as tabelas de equivalência e a instrução de mistura correta, reduzi meu custo com fungicida em 35% na última safra de milho."</p>
+                    <cite>
+                        <strong>Ronaldo Schmidt</strong>
+                        <span>Produtor de 45 Hectares - Cascavel/PR</span>
+                    </cite>
+                </blockquote>
+                <blockquote class="testimonial-item">
+                    <p>"Para o nosso grupo empresarial, a precisão na compra de ativos é vital. O suporte técnico na validação das formulações genéricas nos deu a segurança necessária para compras em larga escala."</p>
+                    <cite>
+                        <strong>Eng. Agrônoma Camila Albuquerque</strong>
+                        <span>Gerente de Suprimentos Grupo Terra Viva - Sorriso/MT</span>
+                    </cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes sobre Defensivos</h2>
+                <p>Esclareça as principais dúvidas técnicas sobre substituição de marcas e eficiência de defensivos agrícolas.</p>
+            </div>
+            <div class="accordion-container" id="faq-target">
+                </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="cta-form">
+        <div class="container cta-container">
+            <div class="cta-text">
+                <h2>Pronto para maximizar o retorno do seu investimento em insumos?</h2>
+                <p>Receba agora o diagnóstico gratuito do seu plano de manejo atual. Nossos engenheiros indicarão as melhores opções de marcas e dosagens para a sua realidade geográfica e tamanho de área.</p>
+                <div class="cta-urgency">
+                    <i class="fa-solid fa-clock icon"></i> <span>Vagas limitadas para diagnósticos gratuitos nesta semana devido à janela de plantio.</span>
+                </div>
+            </div>
+            <div class="cta-card">
+                <h3>Solicitar Diagnóstico Gratuito</h3>
+                <form id="landing-form" onsubmit="event.preventDefault(); alert('Solicitação recebida com sucesso! Nossos agrônomos entrarão em contato em até 4 horas.');">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" required placeholder="Ex: João Silva">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo/Pessoal</label>
+                        <input type="email" id="email" required placeholder="Ex: joao@agro.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="hectares">Tamanho da sua Área (Hectares)</label>
+                        <input type="number" id="hectares" required placeholder="Ex: 50">
+                    </div>
+                    <div class="form-group">
+                        <label for="cultura">Principal Cultura Atual</label>
+                        <select id="cultura" required>
+                            <option value="">Selecione...</option>
+                            <option value="soja">Soja</option>
+                            <option value="milho">Milho</option>
+                            <option value="hortifruti">Hortifrúti / FLV</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar e Falar com Agrônomo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 AgroDireto Inteligência Fitossanitária Ltda. Todos os direitos reservados.</p>
+            <p>As diretrizes fornecidas não substituem a receita agronômica obrigatória. Consulte sempre um profissional habilitado antes da aplicação.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
